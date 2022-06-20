@@ -1,5 +1,5 @@
 {
-    "name": "Virtual Machine with SSH key on Microsoft Azure for Terraform 1.x.x",
+    "name": "Custom Virtual Machine with SSH key on Microsoft Azure for Terraform 1.x.x",
     "description": "Deploys virtual machine with SSH key on Microsoft Azure",
     "version": "2.5",
     "type": "prebuilt",
