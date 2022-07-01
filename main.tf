@@ -178,9 +178,9 @@ resource "azurerm_virtual_machine" "vm" {
   vm_size               = "Standard_B1s"
 
   storage_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "16.04-LTS"
+    publisher = "OpenLogic"
+    offer     = "CentOS"
+    sku       = "8_1"
     version   = "latest"
   }
 
