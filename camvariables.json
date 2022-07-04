@@ -55,7 +55,11 @@
               {
                   "value": "West Central US",
                   "label": "West Central US"
-              },              
+              },
+              {
+                "value": "Japan East",
+                "label": "Japan East"
+              },
               {
                 "value": "East Asia",
                 "label": "East Asia"
