@@ -154,7 +154,7 @@ resource "azurerm_storage_account" "default" {
   name                     = format("st%s", random_id.default.hex)
   resource_group_name      = azurerm_resource_group.default.name
   location                 = var.azure_region
-  account_tier             = "Standard"
+  account_tier             = "Premium"
   account_replication_type = "LRS"
   tags                     = module.camtags.tagsmap
 
@@ -175,7 +175,7 @@ resource "azurerm_virtual_machine" "vm" {
   location              = var.azure_region
   resource_group_name   = azurerm_resource_group.default.name
   network_interface_ids = [azurerm_network_interface.vm.id]
-  vm_size               = "Standard_B1s"
+  vm_size               = "Standard_B2s"
 
   storage_image_reference {
     publisher = "RedHat"
