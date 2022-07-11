@@ -178,9 +178,9 @@ resource "azurerm_virtual_machine" "vm" {
   vm_size               = "Standard_B2s"
 
   storage_image_reference {
-    publisher = "RedHat"
-    offer     = "RHEL"
-    sku       = "8"
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "16.04-LTS"
     version   = "latest"
   }
 
