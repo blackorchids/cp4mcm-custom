@@ -63,7 +63,11 @@
               {
                 "value": "East Asia",
                 "label": "East Asia"
-              }
+              },
+              {
+                "value": "Australia Southeast",
+                "label": "Australia Southeast"
+              }                
             ]
         },
         {
