@@ -37,6 +37,11 @@ variable "azure_region" {
   description = "Azure region to deploy infrastructure resources"
   default     = "West US"
 }
+  
+variable "azure_machinetype" {
+  description = "Azure machine type to deploy infrastructure resources"
+  default     = "Standard_B1s"
+}
 
 variable "name_prefix" {
   description = "Prefix of names for Azure resources"
@@ -175,7 +180,7 @@ resource "azurerm_virtual_machine" "vm" {
   location              = var.azure_region
   resource_group_name   = azurerm_resource_group.default.name
   network_interface_ids = [azurerm_network_interface.vm.id]
-  vm_size               = "Standard_D4s_v3"
+  vm_size               = "${var.azure_machinetype}"
 
   storage_image_reference {
     publisher = "Canonical"
