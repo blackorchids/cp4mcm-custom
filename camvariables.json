@@ -71,6 +71,31 @@
             ]
         },
         {
+            "name": "azure_machinetype",
+            "label": "Azure Machine Type",
+            "description": "Azure machine type to deploy infrastructure resources",
+            "hidden": false,
+            "immutable": false,
+            "required": true,
+            "secured": false,
+            "type": "string",
+            "options": [
+              {
+                  "value": "Standard_B1s",
+                  "label": "Standard_B1s",
+                  "default": "true"
+              },
+              {
+                  "value": "Standard_D4s_v3",
+                  "label": "Standard_D4s_v3"
+              },
+              {
+                  "value": "Standard_E2as_v4",
+                  "label": "Standard_E2as_v4"
+              }        
+            ]
+        },
+        {
             "name": "name_prefix",
             "label": "Prefix of Resource Names",
             "description": "Prefix of names for Azure resources; The name prefix must be 1-52 alphanumeric characters and dash",
